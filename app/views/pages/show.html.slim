@@ -1,0 +1,7 @@
+.container
+	h1 Your Lengthen URL
+	span Your Original #{@url.url}
+	br
+	span Your Lengthen URL:
+	- url = "http://" + request.host + "/" + @url.long
+	= link_to url, url

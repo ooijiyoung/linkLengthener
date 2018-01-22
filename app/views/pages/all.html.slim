@@ -1,0 +1,14 @@
+.container
+	table.table
+		thead
+			th URL
+			th Longtehn
+			th Option
+		tdata
+			- @url.each do |u|
+				- url = "http://" + request.host + "/" + u.long
+				tr
+					td =u.url
+					td =link_to u.long.truncate(20), url
+					td =link_to "Delete", del_path(u), method: "Delete"
+					

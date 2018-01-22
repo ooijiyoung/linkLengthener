@@ -1,0 +1,7 @@
+.container
+	h1 Enter your link
+	p Your link is too short? Not a problem. We make it looooooong for you
+
+	= simple_form_for @url, url: newurl_path do |f|
+		= f.input :url
+		= f.button :submit, id: "submit_btn", class: "btn-primary"

@@ -1,0 +1,12 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+	=link_to root_path, class: "navbar-brand"
+		span LinkLengthener
+	button.navbar-toggler data-toggle="collapse" data-target="#mobileNavbar"
+		span.navbar-toggler-icon
+	.collapse.navbar-collapse#mobileNavbar
+		ul.navbar-nav.mr-auto
+			li.nav-item
+				=link_to "Home", root_path, class: "nav-link"
+			li.nav-item
+				=link_to "Admin", all_path, class: "nav-link"
+
